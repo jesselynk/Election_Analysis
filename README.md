@@ -1,8 +1,8 @@
 # Election_Analysis
 ## Overview 
-In the Election Analysis project we were tasked with analysing election results to determine the participating counties, candidate outcomes and the winning candidate vote counts. 
+In the Election Analysis project we were tasked with analysing election results to determine the participating counties, candidate outcomes and the winning candidate vote counts. We put together a script in VS Code to comb through our python fyle and output our results. 
 ## Election Audit Results 
-* By creating the following for loop we were able to determine the total votes casted: 369,711
+* We needed to first gather the total votes that were casted. By creating the following for loop we were able to determine the total votes were **369,711**
 
 ```
 for row in reader:
@@ -11,7 +11,7 @@ for row in reader:
 
 ```
 
-* The following code allows us to print the details below that provide us with the county breakdown. 
+* We then needed to gather the county voter turnout and print the breakdown. The following code allows us to print the details in a txt file, which is shown below. 
 
 ```
 with open(file_to_save, "w") as txt_file:
@@ -32,9 +32,10 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
     
  ```
-![](County_Results.png)
+ 
+![](County_Results.PNG)
 
-* We were also able to determine the candidate details and winner by using the following code:
+* Finally, we needed to gather the candidate results and print the details of the winner. The following code allows us to do so, and print the results that are shown in our image below:
 
 ```
 for candidate_name in candidate_votes:
@@ -54,8 +55,9 @@ for candidate_name in candidate_votes:
             winning_percentage = vote_percentage
   
 ```
-![](Candidate_Details.png)
+
+![](Candidate_Details.PNG)
 
 ## Election Audit Summary 
-The for loops and if conditions that were used in this script could be used as a base for any election. It simply loops through the various counties and candidates pulling the data that's needed to analyze the results. 
+In this project we were able to tally the total votes, the county voter turnout, and compare the candidate results. It was a great way to analyze the results for this election, but the script could be very helpful with other elections as well. The for loops and if conditions that were used in this script could be used as a base for any election. It simply loops through the various counties and candidates pulling the data that's needed to analyze the results. You could use similar code to pull additional details as well. 
 
