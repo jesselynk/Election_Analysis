@@ -2,7 +2,7 @@
 ## Overview 
 In the Election Analysis project we were tasked with analysing election results to determine the participating counties, candidate outcomes and the winning candidate vote counts. We put together a script in VS Code to comb through our python fyle and output our results. 
 ## Election Audit Results 
-* We needed to first gather the total votes that were casted. By creating the following for loop we were able to determine the total votes were **369,711**
+* **Total Votes:** We needed to first gather the total votes that were casted. By creating the following for loop we were able to determine the total votes were **369,711**
 
 ```
 for row in reader:
@@ -11,7 +11,7 @@ for row in reader:
 
 ```
 
-* We then needed to gather the county voter turnout and print the breakdown. The following code allows us to print the details in a txt file, which is shown below. 
+* **County Results:** We then needed to gather the county voter turnout and print the breakdown. The following code allows us to print the details in a txt file, which is shown below. 
 
 ```
 with open(file_to_save, "w") as txt_file:
@@ -35,7 +35,7 @@ with open(file_to_save, "w") as txt_file:
  
 ![](County_Results.PNG)
 
-* Finally, we needed to gather the candidate results and print the details of the winner. The following code allows us to do so, and print the results that are shown in our image below:
+* **Candidate Details:** Finally, we needed to gather the candidate results and print the details of the winner. The following code allows us to do so, and print the results that are shown in our image below:
 
 ```
 for candidate_name in candidate_votes:
