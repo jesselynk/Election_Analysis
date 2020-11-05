@@ -32,7 +32,7 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
     
  ```
-![County_Results](County_Results.png). 
+![](County_Results.png)
 
 * We were also able to determine the candidate details and winner by using the following code:
 
@@ -54,7 +54,7 @@ for candidate_name in candidate_votes:
             winning_percentage = vote_percentage
   
 ```
-![Candidate_Details](Candidate_Details.png). 
+![](Candidate_Details.png)
 
 ## Election Audit Summary 
 The for loops and if conditions that were used in this script could be used as a base for any election. It simply loops through the various counties and candidates pulling the data that's needed to analyze the results. 
